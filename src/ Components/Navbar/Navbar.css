@@ -1,0 +1,40 @@
+nav {
+  padding: 10px 2%;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-left .menu-icon {
+  width: 22px;
+  margin-right: 25px;
+}
+.nav-left .logo {
+  width: 130px;
+}
+.nav-middle .search-box {
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  border-radius: 25px;
+  padding: 8px 12px;
+}
+.nav-middle .search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 400px;
+}
+.nav-middle .search-box img {
+  width: 20px;
+}
+.nav-right img {
+  width: 30px;
+  margin-left: 15px;
+}
+.nav-right .user-icon {
+  width: 42px;
+  border-radius: 50%;
+}
