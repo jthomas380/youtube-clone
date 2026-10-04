@@ -1,0 +1,29 @@
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.feed .card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.feed .card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0 4px;
+  color: #000;
+}
+
+.feed .card h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.feed .card p {
+  font-size: 14px;
+  color: #5a5a5a;
+}

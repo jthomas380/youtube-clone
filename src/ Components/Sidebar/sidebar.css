@@ -7,10 +7,12 @@
   padding-left: 2%;
   padding-top: 80px;
   font-size: 130%;
+  overflow-y: auto;
+  transition: width 0.3s;
 }
 
-.sortcut-links .side-link,
-.sortcut-links .shortcut-link {
+.sidebar .side-link,
+.sidebar .shortcut-link {
   display: flex;
   align-items: center;
   gap: 21px;
@@ -20,17 +22,23 @@
   cursor: pointer;
 }
 
-.sortcut-links .side-link img,
-.sortcut-links .shortcut-link img {
+.sidebar .side-link img,
+.sidebar .shortcut-link img {
   flex: 0 0 31px;
   width: 31px;
   height: 31px;
   object-fit: contain;
 }
 
-.sortcut-links .side-link p,
-.sortcut-links .shortcut-link p {
+.sidebar .side-link p,
+.sidebar .shortcut-link p {
   min-width: 0;
+}
+
+.subscribed-list h3 {
+  margin: 24px 0 12px;
+  color: #5a5a5a;
+  font-size: 16px;
 }
 
 .subscribed-list .side-link {
@@ -38,24 +46,45 @@
 }
 
 .subscribed-list .side-link img {
-  flex-basis: 62px;
-  width: 62px;
-  height: 62px;
+  flex: 0 0 31px;
+  width: 31px;
+  height: 31px;
 }
-.sidebar hr{
+
+.sidebar hr {
   border: none;
   height: 1px;
   background-color: #ccc;
   width: 85%;
 }
+
 .subscribed-list hr {
   border: none;
   font-size: 13px;
   color: #5a5a5a;
   width: 85%;
 }
+
 .subscribed-list img {
-  width: 25px;
   border-radius: 50%;
-  margin-right: 10px;
+}
+
+.sidebar.small-sidebar {
+  width: 70px;
+  padding-left: 0;
+}
+
+.small-sidebar .side-link,
+.small-sidebar .shortcut-link {
+  justify-content: center;
+  padding-right: 2%;
+}
+
+.small-sidebar .side-link p ,
+.small-sidebar .shortcut-link p,
+.small-sidebar .subscribed-list h3 {
+  display: none;
+}
+.small-sidebar{
+  width: 5%;
 }

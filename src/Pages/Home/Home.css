@@ -1,0 +1,11 @@
+.container {
+  padding-left: 17%;
+  padding-right: 2%;
+  background: #f9f9f9;
+  min-height: 100vh;
+  transition: padding-left 0.3s;
+}
+
+.large-container {
+  padding-left: 90px;
+}
