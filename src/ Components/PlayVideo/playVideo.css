@@ -36,7 +36,7 @@
 .publisher {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  width: 100%;
 }
 .publisher div {
   flex: 1;
@@ -64,7 +64,7 @@
   border-radius: 4px;
   cursor: pointer;
   outline: 0;
-  margin-left: 85%;
+  float: right;
 }
 .vid-discription {
   margin: 15px 0px;

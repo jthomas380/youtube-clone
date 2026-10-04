@@ -46,9 +46,9 @@ const PlayVideo = () => {
       <div className="vid-discription">
         <p>Channel that makes learning Easy</p>
         <p>Subscribe to Greatstack to watch more tutorials on web design</p>
-   <hr/>
+        <hr />
         <h4>130 Comments</h4>
-       
+
         {comments.map((comment) => (
           <div className="comment" key={comment}>
             <img src={userProfile} alt="User profile" />

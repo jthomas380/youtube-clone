@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import menu_icon from "../../assets/menu.png";
 import logo from "../../assets/logo.png";
@@ -18,7 +19,9 @@ const Navbar = ({ setSidebar }) => {
           alt="Menu"
           onClick={() => setSidebar((prev) => !prev)}
         />
-        <img className="logo" src={logo} alt="Logo" />
+        <Link to="/" aria-label="Go to homepage">
+          <img className="logo" src={logo} alt="YouTube" />
+        </Link>
       </div>
       <div className="nav-middle flex-div">
         <div className="search-box flex-div">
